@@ -1,0 +1,571 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+} 
+
+#mainbox{
+    width: 25%;
+    height: 95vh;
+    box-shadow: inset 0 0 5px black;
+    background-color: rgb(227, 26, 59);
+    border-radius: 5%;
+    margin-top: 5px;
+}
+.box1{
+    width: 95%;
+    background-color: red;
+    height: 90vh;
+    /* border: 1px solid black; */
+    margin:10px 0 50px 10px;
+    justify-content: space-evenly;
+    background-color: red;
+    border-radius: 4%;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.box2 span{
+    display: flex;
+    justify-content: space-around;
+}
+.box2 small{
+    margin: 5px 0 ;
+    font-size: 13px;
+    color: white;
+}
+.box2 button{
+    
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+     margin-bottom: 5px; 
+     border-bottom-right-radius: 8px;
+     border-bottom-left-radius: 8px;
+     background-color: rgb(64, 62, 62);
+     color: white;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     box-shadow: inset 6px 6px 13px #fff
+     inset 6px 6px 13px rgb(0, 0, 0);
+}
+.box2 button:hover{
+    transform: scale(0.9);
+    /* background-color: white;
+    color: black; */
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+
+}
+.box3 span{
+    display: flex;
+    justify-content: space-around;
+}
+.box3 span button{
+    width: 200px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: white;
+    background-color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.box3 span button:hover{
+    transform: scale(0.9);
+    /* background-color: white;
+    color: black; */
+}
+
+
+.box3 span small{
+    margin: 10px 0 0 0;
+    color: white;
+}
+.box1 .box1-top{
+    width: 95%;
+    height: 25%;
+    /* border: 1px solid black; */
+    margin-left: 9px;
+}
+input{
+    width: 95%;
+    height: 70px;
+    box-shadow: inset 0 0 5px black;
+    border: 1px solid black;
+    border: none;
+    margin-bottom:-40px;
+    margin-left: 8px;
+     padding-top: 15px; 
+    text-align: end;
+    font-size: 20px;
+    padding-right: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: red;
+}  
+input:focus{
+    outline: none;
+}
+.box1-text{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+#initia{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Times New Roman',  ;
+}
+
+.nat{
+
+    text-align: center;
+    margin-bottom:15px;
+}
+.con{
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+
+.con span button{
+    width: 80px;
+    height: 25px;
+    margin-left: 9px;
+    margin-top: 3px;
+    color: white;
+    background-color: darkmagenta;
+    border: none;
+    cursor: pointer;
+    
+}
+.con span button:hover{
+    background-color: rgb(52, 4, 52);
+    transform: scale(0.9);
+
+}
+
+.middle{
+    width: 95%;
+    height: 85px;
+    box-shadow: inset 0 0 5px black;
+    margin-top: -15px;
+    margin-left: 8px;
+}
+.beta{
+    text-align:right;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+@media(max-width:950px){
+    #mainbox{
+        width: 100%;
+        height: 100vh;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: 100vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .con span button{
+        width: 50px;
+
+    }
+    .box3 span button{
+        margin-bottom: 10px;
+        padding-top: 8px;
+    }
+    .box3 span button{
+        padding-bottom: 20px;
+    }
+    
+
+}
+@media(max-width:300px){
+    #mainbox{
+        width: 100%;
+        height: auto;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: auto;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .con span button{
+        width: 40px;
+
+    }
+    .box3 span button{
+        margin-bottom: 10px;
+        padding-top: 8px;
+    }
+    
+
+} 
+
+
+   /* @media only screen and (max-width:1800px){
+    #mainbox{
+        width: 100%;
+        height: auto;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: auto;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    
+    .con span button{
+        width: 20px;
+
+    }
+    .box3 span button{
+        margin-top: 5px;
+    }
+    
+}  
+   */
+
+
+
+   @media(max-width:830px){
+    #mainbox{
+        width: 100%;
+        height: 100vh;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: 100vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .con span button{
+        width: 50px;
+
+    }
+    .box3 span button{
+        margin-bottom: 10px;
+        padding-top: 5px;
+    }
+    
+
+}
+@media(max-width:920px){
+    #mainbox{
+        width: 100%;
+        height: auto;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: auto;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .con span button{
+        width: 50px;
+
+    }
+    .box3 span button{
+        margin-bottom: 10px;
+        padding-top: 5px;
+    }
+    
+
+}
+
+
+@media(max-width:330px){
+    #mainbox{
+        width: 100%;
+        height: 100vh;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: 95vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .con span button{
+        width: 45px;
+
+    }
+    .box3 span button{
+        margin-bottom: 8px;
+        height: 20px;
+        
+    }
+    .box3{
+        margin-top: -10px;
+    }
+    .box2 button{
+        height: 20px;
+
+    }
+
+}
+@media(max-width:360px){
+    #mainbox{
+        width: 100%;
+        height: 100vh;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: 95vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 20px;
+    }
+    .con span button{
+        width: 45px;
+
+    }
+    .box3 span button{
+        margin-bottom: -4px;
+        height: 15px;
+        
+        
+    }
+    .box3{
+        margin-top: -15px;
+    }
+    .box2 button{
+        height: 20px;
+
+    }
+    .box2{
+        margin-top: 12px;
+    }
+
+}
+@media(max-width:330px){
+    #mainbox{
+        width: 100%;
+        height: 100vh;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: 95vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 25px;
+        font-size: 10px;
+    }
+    .con span button{
+        width: 45px;
+        height: 20px;
+        margin-bottom: -10px;
+    
+
+    }
+    .box3 span button{
+        margin-top: 20px;
+        height: 15px;
+        font-size:10px ;
+        
+        
+    }
+    .box3{
+        margin-top: -15px;
+    }
+    .box2 button{
+        
+        font-size: 10px;
+        margin-top: -8px;
+        
+    }
+    .box2{
+        margin-top: 20px;
+    }
+    .box2 small{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width:320px){
+    #mainbox{
+        width: 100%;
+        height: 100vh;
+        box-shadow: inset 0 0 5px black;
+        
+    
+    }
+    .box1{
+        width: 95%;
+        height: 95vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+    }
+    .con{
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 25px;
+        font-size: 15px;
+    }
+    .con span button{
+        width: 45px;
+        height: 15px;
+        margin-bottom: -10px;
+    
+
+    }
+    .box3 span button{
+        margin-top: -2px;
+        height: 10px;
+        font-size:15px ;
+        
+        
+    }
+    .box3 span small{
+        margin-bottom: 2px;
+    }
+    .box3{
+        margin-top: -15px;
+    }
+    .box2 button{
+        
+        font-size: 15px;
+        margin-top: -8px;
+        
+    }
+    .box2{
+        margin-top: 20px;
+    }
+    .box2 small{
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+}
+/* @media(max-width:240){
+    #mainbox{
+        width: 100%;
+        height: 200vh;
+        box-shadow: inset 0 0 5px black;
+    }
+    .box1{
+        width: 95%;
+        height: 200vh;
+    }
+    .box1-top{
+        width: 95%;
+        margin-right: 20px;
+        font-size: 10px;
+    }
+   .box1-text{
+    font-size: 15px;
+   }
+
+} */
